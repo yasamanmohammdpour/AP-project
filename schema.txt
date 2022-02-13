@@ -1,0 +1,22 @@
+User
+name CHAR(20)
+id UNIQUE INTEGER
+pass CHAR(30)
+phone CHAR(12)
+email CHAR(50)
+joined TIMESTAMP
+
+Account
+pass CHAR(30)
+ownerid INTEGER
+balance INTEGER
+alias UNIQUE CHAR(20)
+favourite BOOLEAN
+createTime TIMESTAMP
+
+transaction
+fromnum CHAR(20)
+tonum CHAR(20)
+amount INTEGER
+createTime TIMESTAMP
+pass CHAR(30)
